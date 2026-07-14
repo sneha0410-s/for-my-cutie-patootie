@@ -1,1 +1,484 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
 
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ffd6e8,
+        #ffeef6,
+        #ffc1dc
+    );
+
+    font-family:
+    "Georgia",
+    serif;
+
+}
+
+
+
+.container{
+
+    width:100%;
+
+    max-width:420px;
+
+    padding:20px;
+
+    text-align:center;
+
+}
+
+
+
+
+
+.page{
+
+    width:100%;
+
+    padding:25px 20px;
+
+    background:
+    rgba(255,255,255,0.65);
+
+
+    backdrop-filter:
+    blur(12px);
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.15);
+
+
+    animation:
+    fade 0.8s ease;
+
+
+}
+
+
+
+.hidden{
+
+    display:none;
+
+}
+
+
+
+
+.gif{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:contain;
+
+    border-radius:20px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+h1{
+
+    color:#d63384;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+h2{
+
+    color:#9d174d;
+
+    font-size:21px;
+
+    line-height:1.4;
+
+    margin:20px 0;
+
+}
+
+
+
+p{
+
+    color:#555;
+
+    font-size:17px;
+
+    margin-bottom:20px;
+
+    line-height:1.5;
+
+}
+
+
+
+
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #ff4d88,
+    #ff85b3
+    );
+
+
+    color:white;
+
+
+    padding:
+
+    13px 28px;
+
+
+    margin:8px;
+
+
+    border-radius:40px;
+
+
+    font-size:17px;
+
+
+    font-weight:bold;
+
+
+    box-shadow:
+
+    0 5px 15px rgba(255,77,136,0.35);
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+
+.envelope{
+
+
+    font-size:100px;
+
+
+    cursor:pointer;
+
+
+    background:none;
+
+
+    box-shadow:none;
+
+
+    animation:
+
+    bounce 1.5s infinite;
+
+
+}
+
+
+
+#letterBox{
+
+
+    display:none;
+
+
+    position:fixed;
+
+
+    inset:0;
+
+
+    background:
+
+    rgba(255,182,193,0.9);
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    padding:20px;
+
+
+    z-index:100;
+
+
+}
+
+
+
+
+#letterBox img{
+
+
+    width:100%;
+
+
+    max-width:380px;
+
+
+    max-height:85vh;
+
+
+    object-fit:contain;
+
+
+    background:white;
+
+
+    padding:12px;
+
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,0.2);
+
+
+    animation:
+
+    letterOpen 0.8s ease;
+
+
+}
+
+
+
+
+
+
+@keyframes fade{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+
+
+@keyframes bounce{
+
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+
+}
+
+
+
+
+
+
+
+@keyframes letterOpen{
+
+
+from{
+
+transform:
+scale(0.5)
+rotate(-5deg);
+
+opacity:0;
+
+}
+
+
+to{
+
+transform:
+scale(1)
+rotate(0);
+
+opacity:1;
+
+}
+
+
+}
+
+
+
+
+
+
+/* HEARTS CREATED BY JS */
+
+
+.heart{
+
+
+position:fixed;
+
+
+top:-20px;
+
+
+font-size:25px;
+
+
+animation:
+fall linear forwards;
+
+
+z-index:200;
+
+
+}
+
+
+
+
+
+@keyframes fall{
+
+
+to{
+
+transform:
+translateY(110vh)
+rotate(360deg);
+
+
+opacity:0;
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* EXTRA MOBILE ADJUSTMENT */
+
+
+@media(max-width:380px){
+
+
+h1{
+
+font-size:27px;
+
+}
+
+
+h2{
+
+font-size:18px;
+
+}
+
+
+.gif{
+
+width:150px;
+
+height:150px;
+
+}
+
+
+button{
+
+font-size:15px;
+
+padding:12px 22px;
+
+}
+
+
+}

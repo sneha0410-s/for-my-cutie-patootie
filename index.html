@@ -1,186 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>For My Cutie Patootie ❤️</title>
+<title>For Sarthak ❤️</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-
 </head>
+
 
 <body>
 
-<!-- Background Music -->
-<audio id="bgMusic" loop>
-    <source src="music.mp3" type="audio/mp3">
+
+<audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
 </audio>
 
-<!-- Floating Hearts -->
-<div id="hearts"></div>
 
-<!-- Landing Page -->
-<section id="landing" class="page active">
 
-<div class="glass">
+<main class="container">
 
-<h3 class="smallTitle">
-Happy 2 Years 3 Months
-<br>
-Unnecessary 🤣❤️💋
-</h3>
 
-<h1 class="title">
-For My
-<br>
-Cutie Patootie ❤️
+
+<!-- QUESTION 1 -->
+
+<section class="page" id="q1">
+
+<img class="gif"
+src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWVvMDBhaWJ2MHdmeW51MTFzeGx4b24xNnYwbDVtOTFnZWh1dmx2OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bk5vxWFSZXicJHijQ5/giphy.gif"
+alt="cute gif">
+
+
+<h1>
+Hey Sarthak ❤️
 </h1>
 
-<p class="subtitle">
-Before you open something made with all my heart...
-<br>
-answer a few lovely questions for me. 🥹
-</p>
-
-<button id="startBtn">
-Open With Love ❤️
-</button>
-
-</div>
-
-</section>
-
-<!-- Question 1 -->
-
-<section id="question1" class="page">
-
-<div class="card">
-
-<img src="gif1.gif" class="gif">
 
 <h2>
-Do you love your overthinking,
-overreacting,
-overwhelming,
-overemotional girlfriend? 🥹❤️
+Do you know what today is? 👀
 </h2>
 
-<div class="buttons">
 
-<button class="yes" onclick="nextQuestion(2)">
+<p>
+A little question before your surprise 💌
+</p>
+
+
+<button onclick="yes(2)">
 YES ❤️
 </button>
 
-<button id="no1" class="no">
-NO 🙄
+
+<button onclick="no(1)">
+NO 😤
 </button>
 
-</div>
-
-</div>
 
 </section>
 
-<!-- Question 2 -->
 
-<section id="question2" class="page">
 
-<div class="card">
 
-<img src="gif2.gif" class="gif">
+
+
+
+
+<!-- QUESTION 2 -->
+
+
+<section class="page hidden" id="q2">
+
+
+<img class="gif"
+src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXB1dzlkMnQzdWhrZnVodTd0Y2RyMWZ1aHp5M2l2OHJ5enhndW95YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EOzAjdaLuizsUEqwqq/giphy.gif"
+alt="cute gif">
+
+
+<h1>
+Question 2 💗
+</h1>
+
 
 <h2>
-
-Will you keep choosing me
-in every lifetime? ❤️
-
+Do you remember how our beautiful journey started? 🥺
 </h2>
 
-<div class="buttons">
 
-<button class="yes" onclick="nextQuestion(3)">
-Always ❤️
+<button onclick="yes(3)">
+YES ❤️
 </button>
 
-<button id="no2" class="no">
-No 🙄
+
+<button onclick="no(2)">
+NO 😤
 </button>
 
-</div>
-
-</div>
 
 </section>
 
-<!-- Question 3 -->
 
-<section id="question3" class="page">
 
-<div class="card">
 
-<img src="gif3.gif" class="gif">
+
+
+
+
+
+<!-- QUESTION 3 -->
+
+
+<section class="page hidden" id="q3">
+
+
+<img class="gif"
+src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmdicW9vMW85NWNhMnhmM2F5MGg4MG1naHY5MDU4eXc3aDlpNDJnaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Lx8z9ra4yYgtEDb7gq/giphy.gif"
+alt="cute gif">
+
+
+<h1>
+Question 3 🤭
+</h1>
+
 
 <h2>
-
-Ready to open
-your surprise? 💌
-
+Am I still your favourite person to annoy? 😌❤️
 </h2>
 
-<div class="buttons">
 
-<button class="yes" onclick="openEnvelope()">
-
-Open It ❤️
-
+<button onclick="yes(4)">
+YES 💕
 </button>
 
-<button id="no3" class="no">
 
-Not Yet 🙄
-
+<button onclick="no(3)">
+NO 😤
 </button>
 
-</div>
-
-</div>
 
 </section>
 
-<!-- Envelope -->
 
-<section id="envelopePage" class="page">
 
-<div class="envelopeContainer">
 
-<div id="envelope">
+
+
+
+
+
+<!-- QUESTION 4 -->
+
+
+<section class="page hidden" id="q4">
+
+
+<img class="gif"
+src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDQ5aXc1YXRtM2lwdGVncG1pb3JqNXdwZHBiaGxvajE3Yjlhb2Y4NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/21gIXGRPqgSV4HngAT/giphy.gif"
+alt="cute gif">
+
+
+<h1>
+Question 4 🫶
+</h1>
+
+
+<h2>
+Will you keep choosing me through all our silly fights and cute moments? ❤️
+</h2>
+
+
+<button onclick="yes(5)">
+YES 🥹
+</button>
+
+
+<button onclick="no(4)">
+NO 😤
+</button>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- QUESTION 5 FINAL -->
+
+
+<section class="page hidden" id="q5">
+
+
+<img class="gif"
+src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3NjZWRmbTk3enRteHFkdWFrNHQ3MHM5eXFsZ3AzNXVmZWl4Mno1MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bm2O3nXTcKJeU/giphy.gif"
+alt="cute gif">
+
+
+<h1>
+Last Question 💌
+</h1>
+
+
+<h2>
+Will you love me forever? ❤️🥹
+</h2>
+
+
+<button onclick="yes(6)">
+YES ❤️
+</button>
+
+
+<button onclick="no(5)">
+NO 😤
+</button>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ENVELOPE PAGE -->
+
+
+<section class="page hidden" id="q6">
+
+
+<h1>
+You unlocked your surprise ✨
+</h1>
+
+
+<p>
+Tap the envelope to open your letter 💌
+</p>
+
+
+
+<div class="envelope" onclick="openLetter()">
 
 💌
 
 </div>
 
-<p>
 
-Tap the envelope ❤️
 
-</p>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- LETTER POPUP -->
+
+
+<div id="letterBox">
+
+
+<img src="letter.jpeg"
+alt="My handwritten letter">
+
 
 </div>
 
-</section>
 
-<!-- Letter -->
 
-<section id="letterPage" class="page">
 
-<img src="letter.jpeg" id="letter">
 
-</section>
+
+</main>
+
+
 
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
+
+

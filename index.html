@@ -1,1 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>For My Cutie Patootie ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<!-- Floating Hearts -->
+<div id="hearts"></div>
+
+<!-- Landing Page -->
+<section id="landing" class="page active">
+
+<div class="glass">
+
+<h3 class="smallTitle">
+Happy 2 Years 3 Months
+<br>
+Unnecessary 🤣❤️💋
+</h3>
+
+<h1 class="title">
+For My
+<br>
+Cutie Patootie ❤️
+</h1>
+
+<p class="subtitle">
+Before you open something made with all my heart...
+<br>
+answer a few lovely questions for me. 🥹
+</p>
+
+<button id="startBtn">
+Open With Love ❤️
+</button>
+
+</div>
+
+</section>
+
+<!-- Question 1 -->
+
+<section id="question1" class="page">
+
+<div class="card">
+
+<img src="gif1.gif" class="gif">
+
+<h2>
+Do you love your overthinking,
+overreacting,
+overwhelming,
+overemotional girlfriend? 🥹❤️
+</h2>
+
+<div class="buttons">
+
+<button class="yes" onclick="nextQuestion(2)">
+YES ❤️
+</button>
+
+<button id="no1" class="no">
+NO 🙄
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Question 2 -->
+
+<section id="question2" class="page">
+
+<div class="card">
+
+<img src="gif2.gif" class="gif">
+
+<h2>
+
+Will you keep choosing me
+in every lifetime? ❤️
+
+</h2>
+
+<div class="buttons">
+
+<button class="yes" onclick="nextQuestion(3)">
+Always ❤️
+</button>
+
+<button id="no2" class="no">
+No 🙄
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Question 3 -->
+
+<section id="question3" class="page">
+
+<div class="card">
+
+<img src="gif3.gif" class="gif">
+
+<h2>
+
+Ready to open
+your surprise? 💌
+
+</h2>
+
+<div class="buttons">
+
+<button class="yes" onclick="openEnvelope()">
+
+Open It ❤️
+
+</button>
+
+<button id="no3" class="no">
+
+Not Yet 🙄
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Envelope -->
+
+<section id="envelopePage" class="page">
+
+<div class="envelopeContainer">
+
+<div id="envelope">
+
+💌
+
+</div>
+
+<p>
+
+Tap the envelope ❤️
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Letter -->
+
+<section id="letterPage" class="page">
+
+<img src="letter.jpeg" id="letter">
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

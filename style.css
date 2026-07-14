@@ -482,3 +482,105 @@ padding:12px 22px;
 
 
 }
+
+
+/* COUNTDOWN DESIGN */
+
+.countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin:25px 0;
+
+    flex-wrap:wrap;
+
+}
+
+
+.countdown div{
+
+    background:white;
+
+    width:70px;
+
+    height:75px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.12);
+
+}
+
+
+
+.countdown h2{
+
+    margin:0;
+
+    color:#d63384;
+
+    font-size:25px;
+
+}
+
+
+
+.countdown p{
+
+    margin:0;
+
+    font-size:12px;
+
+    color:#777;
+
+}
+
+
+
+/* envelope glow */
+
+.envelope{
+
+    display:inline-block;
+
+    font-size:100px;
+
+    cursor:pointer;
+
+    animation:
+    bounce 1.5s infinite,
+    glow 2s infinite;
+
+}
+
+
+
+@keyframes glow{
+
+0%,100%{
+
+filter:drop-shadow(0 0 5px pink);
+
+}
+
+
+50%{
+
+filter:drop-shadow(0 0 25px #ff4d88);
+
+}
+
+}
